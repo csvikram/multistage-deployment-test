@@ -48,3 +48,5 @@ artifacts:
   type: zip
   files:
     - template-export.yml
+    - staging-stack-configuration.json
+    - prod-stack-configuration.json
