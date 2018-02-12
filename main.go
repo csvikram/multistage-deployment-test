@@ -15,7 +15,7 @@ func handler(request events.APIGatewayProxyRequest) (events.APIGatewayProxyRespo
 	if err != nil {
 		return events.APIGatewayProxyResponse{}, err
 	}
-	log.Print("this is env" + os.Getenv("DBName"))
+	log.Print("this is env" + os.Getenv("CurrentEnv"))
 
 	return events.APIGatewayProxyResponse{
 		StatusCode: 200,
